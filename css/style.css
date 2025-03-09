@@ -120,3 +120,19 @@ ol{
     font-weight: 500;
     font-size: 14pt;
 }
+
+.portfolio .box_content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.portfolio a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    font-size: 15pt;
+    font-weight: 500;
+    background-color: rgb(76, 76, 196);
+}
