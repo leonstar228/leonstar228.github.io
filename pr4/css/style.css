@@ -1,0 +1,369 @@
+.container{
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+}
+
+/* --------------------- Task --------------------- */
+/* --------------------- First way --------------------- */
+.task1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 50px solid yellow;
+    background-color: white;
+    position: relative;
+    margin: 50px;
+    text-align: center;
+    font-size: 30pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.task1:after{
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    width: 100px;
+    height: 100px;
+    content: "";
+    border: 100px solid blue;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+/* --------------------- Second way --------------------- */
+.task2{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, white 0 25%, yellow 25% 50%, blue 50% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30pt;
+    margin-top: 60px;
+}
+
+/* --------------------- Figures --------------------- */
+/* --------------------- Circle --------------------- */
+#circle{
+    width: 120px;
+    height: 120px;
+    background-color: green;
+    border-radius: 60px;
+}
+
+/* --------------------- Square --------------------- */
+#square{
+    width: 120px;
+    height: 120px;
+    background-color: pink;
+}
+
+/* --------------------- Rectangle --------------------- */
+#rectangle{
+    width: 220px;
+    height: 120px;
+    background-color: lightskyblue;
+}
+
+/* --------------------- Oval --------------------- */
+#oval{
+    width: 200px;
+    height: 100px;
+    background-color: palevioletred;
+    border-radius: 100px / 50px;
+}
+
+/* --------------------- Triangle top --------------------- */
+#triangle{
+    width: 0;
+    height: 0;
+    border-bottom: 140px solid yellow;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+}
+
+/* --------------------- Triangle down --------------------- */
+#triangle_down{
+    width: 0;
+    height: 0;
+    border-top: 140px solid cyan;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+}
+
+/* --------------------- Triangle Left --------------------- */
+#triangle_left{
+    width: 0;
+    height: 0;
+    border-right: 140px solid greenyellow;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+}
+
+/* --------------------- Triangle right --------------------- */
+#triangle_right{
+    width: 0;
+    height: 0;
+    border-left: 140px solid orangered;
+    border-top: 70px solid transparent;
+    border-bottom: 70px solid transparent;
+}
+
+/* --------------------- Diamond --------------------- */
+#diamond{
+    width: 120px;
+    height: 120px;
+    background-color: forestgreen;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    margin: 60px 90px;
+}
+
+/* --------------------- Trapezium --------------------- */
+#trapezium{
+    height: 0;
+    width: 120px;
+    border-bottom: 120px solid red;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+}
+
+/* --------------------- Parallelogram --------------------- */
+#parallelogram{
+    width: 160px;
+    height: 100px;
+    background-color: purple;
+    transform: skew(30deg);
+    margin-left: 30px;
+}
+
+/* --------------------- Simple star --------------------- */
+#star{
+    width: 0;
+    height: 0;
+    margin: 60px 0;
+    color: coral;
+    position: relative;
+    display: block;
+    border-bottom: 70px solid coral;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+}
+#star:before{
+    height: 0;
+    width: 0;
+    position: absolute;
+    display: block;
+    top: -45px;
+    left: -65px;
+    border-bottom: 80px solid coral;
+    border-right: 30px solid transparent;
+    border-left: 30px solid transparent;
+    content: "";
+    transform: rotate(-35deg);
+}
+#star:after{
+    height: 0;
+    width: 0;
+    position: absolute;
+    display: block;
+    top: 3px;
+    left: -105px;
+    border-bottom: 70px solid coral;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    content: "";
+    transform: rotate(-70deg);
+}
+
+/* --------------------- Six pointed star --------------------- */
+#star_six_points{
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    border-bottom: 100px solid violet;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    margin: 10px auto;
+}
+#star_six_points:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-top: 100px solid violet;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    margin: 30px 0 0 -50px;
+}
+
+/* --------------------- Pentagon --------------------- */
+#pentagon{
+    width: 54px;
+    position: relative;
+    border-width: 50px 18px 0;
+    border-style: solid;
+    margin-top: 250px;
+    border-color: seagreen transparent;
+}
+#pentagon:before{
+    content: "";
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: -84px;
+    left: -18px;
+    border-width: 0 45px 35px;
+    border-style: solid;
+    border-color: transparent transparent seagreen;
+}
+
+/* --------------------- Hexagon --------------------- */
+#hexagon{
+    width: 100px;
+    height: 55px;
+    background-color: brown;
+    position: relative;
+    margin: 50px 0;
+}
+#hexagon:before{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: -25px;
+    left: 0;
+    border-bottom: 25px solid brown;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+#hexagon:after{
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    border-top: 25px solid brown;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+}
+
+/* --------------------- Octagon --------------------- */
+#octagon{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+    position: relative;
+    
+}
+#octagon:before{
+    content: "";
+    width: 43px;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 30px solid blueviolet;
+    border-right: 29px solid white;
+    border-left: 29px solid white;
+}
+#octagon:after{
+    content: "";
+    width: 43px;
+    height: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 29px solid blueviolet;
+    border-right: 29px solid white;
+    border-left: 29px solid white;
+}
+
+/* --------------------- Heart --------------------- */
+#heart{
+    position: relative;
+}
+#heart:before, #heart:after{
+    content: "";
+    width: 70px;
+    height: 115px;
+    position: absolute;
+    background-color: red;
+    left: 70px;
+    top: 20px;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+}
+#heart:after{
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+}
+
+/* --------------------- Infinity --------------------- */
+#infinity{
+    width: 220px;
+    height: 100px;
+    position: relative;
+}
+#infinity:before, #infinity:after{
+    content: "";
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    border: 20px solid purple;
+    border-radius: 50px 50px 0 50px;
+    transform: rotate(-45deg);
+}
+#infinity:after{
+    left: auto;
+    right: 0;
+    border-radius: 50px 50px 50px 0;
+    transform: rotate(45deg);
+}
+
+/* --------------------- Comment bubble --------------------- */
+#comment_bubble{
+    width: 140px;
+    height: 100px;
+    background-color: aqua;
+    position: relative;
+    top: 160px;
+    left: 30px;
+    border-radius: 12px;
+}
+#comment_bubble:before{
+    content: "";
+    width: 0;
+    height: 0;
+    right: 100%;
+    top: 38px;
+    position: absolute;
+    border-right: 26px solid aqua;
+    border-top: 13px solid transparent;
+    border-bottom: 13px solid transparent;
+}
+
+/* --------------------- Pacman --------------------- */
+#pacman{
+    width: 0;
+    height: 0;
+    border-right: 70px solid transparent;
+    border-top: 70px solid yellow;
+    border-left: 70px solid yellow;
+    border-bottom: 70px solid yellow;
+    border-top-left-radius: 70px;
+    border-top-right-radius: 70px;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    margin-top: 200px;
+}
