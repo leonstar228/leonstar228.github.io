@@ -1,0 +1,121 @@
+:root {
+  --green: #009688;
+  --dark-green: #028073;
+  --yellow: #ec9b18;
+  --dark-yellow: #cb8617;
+  --red: #D32F2F;
+  --dark-red: #aa2525;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.plan {
+  float: left;
+  width: 30%;
+  margin: 1.5%;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.plan_header {
+  width: 100%;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.plan_header h1 {
+  font-size: 30px;
+}
+
+.plan_header p {
+  font-weight: 100;
+  font-size: 23px;
+}
+
+.table {
+  padding: 15px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 10px;
+  color: grey;
+}
+
+.highlight {
+  font-weight: bold;
+}
+
+.plan_main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  margin: 25px 0;
+  display: inline-block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.box_button {
+  border-top: 2px dashed rgb(160, 160, 160);
+  width: 90%;
+}
+
+/* Колір для інших блоків */
+.green {
+  background-color: var(--green);
+}
+
+.green-border {
+  border: 2px solid var(--green);
+  border-top: 10px solid var(--dark-green);
+  border-bottom: 10px solid var(--dark-green);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.yellow-border {
+  border: 2px solid var(--yellow);
+  border-top: 10px solid var(--dark-yellow);
+  border-bottom: 10px solid var(--dark-yellow);
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.red-border {
+  border: 2px solid var(--red);
+  border-top: 10px solid var(--dark-red);
+  border-bottom: 10px solid var(--dark-red);
+}
