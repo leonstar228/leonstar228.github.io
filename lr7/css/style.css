@@ -110,7 +110,7 @@ img{
 .coming_soon{
     background-color: rgb(220, 23, 160);
     color: white;
-    cursor: none;
+    cursor: default;
 }
 
 /* ------------------ Slides ------------------ */
