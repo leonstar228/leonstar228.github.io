@@ -105,10 +105,12 @@ img{
     border: none;
     font-weight: 600;
     font-size: 15px;
+    cursor: pointer;
 }
 .coming_soon{
     background-color: rgb(220, 23, 160);
     color: white;
+    cursor: none;
 }
 
 /* ------------------ Slides ------------------ */
@@ -125,6 +127,7 @@ img{
     top: 70px;
     background-color: white;
     z-index: 1;
+    cursor: pointer;
 }
 .left{
     left: -20px;
