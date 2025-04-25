@@ -1,0 +1,124 @@
+:root {
+  --green: #009688;
+  --dark-green: #028073;
+  --yellow: #ec9b18;
+  --dark-yellow: #cb8617;
+  --red: #D32F2F;
+  --dark-red: #aa2525;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.plan_table {
+  float: left;
+  width: 30%;
+  margin: 1.5%;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.plan_header {
+  color: white;
+  padding: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+.plan_header h1 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.plan_header p {
+  font-weight: 100;
+  font-size: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+tbody tr:first-child td{
+  padding-top: 30px;
+}
+tbody tr:last-child td{
+  padding-bottom: 30px;
+}
+td {
+  padding: 10px;
+  color: grey;
+}
+.highlight {
+  font-weight: bold;
+}
+
+.border-line{
+  border-top: 2px dashed rgb(160, 160, 160);
+}
+
+.button {
+  margin: 30px 0 20px;
+  display: inline-block;
+  padding: 15px 25px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+
+
+/* Колір для інших блоків */
+.green {
+  background-color: var(--green);
+}
+.green-border {
+  border: 2px solid var(--green);
+}
+.green-border-top {
+  border-top: 10px solid var(--dark-green);
+}
+.green-border-bottom{
+  border-bottom: 10px solid var(--dark-green);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+.yellow-border {
+  border: 2px solid var(--yellow);
+}
+.yellow-border-top {
+  border-top: 10px solid var(--dark-yellow);
+}
+.yellow-border-bottom{
+  border-bottom: 10px solid var(--dark-yellow);
+}
+
+.red {
+  background-color: var(--red);
+}
+.red-border {
+  border: 2px solid var(--red);
+}
+.red-border-top {
+  border-top: 10px solid var(--dark-red);
+}
+.red-border-bottom{
+  border-bottom: 10px solid var(--dark-red);
+}

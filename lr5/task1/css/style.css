@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ----------------------- Table ------------------------- */
+table {
+    border-collapse: collapse;
+    width: 750px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+th,
+td {
+    padding: 16px;
+    border: 2px solid white;
+    font-size: 20px;
+    width: 17.5%;
+}
+
+th {
+    background-color: #95c9ec;
+    color: white;
+}
+
+td {
+    background-color: #cee6f7;
+    color: rgb(90, 90, 90);
+}
+
+td:nth-child(1), th:nth-child(1) {
+    color: white;
+    background-color: #95c9ec;
+    text-align: left;
+    padding-left: 25px;
+    width: 30%;
+} 
+
+/* ----------------------- Float ------------------------- */
+.table {
+    width: 750px;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.row {
+    width: 100%; 
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.cell {
+    float: left;
+    width: 17.5%;
+    padding: 16px;
+    border: 1px solid white;
+    text-align: center;
+    background-color: #cee6f7;
+    color: rgb(90, 90, 90);
+    font-size: 20px;
+}
+
+.header .cell {
+    background-color: #95c9ec;
+    color: white;
+    font-weight: bold;
+}
+
+.row > .cell:nth-child(1) {
+    background-color: #95c9ec;
+    color: white;
+    text-align: left;
+    width: 30%;
+    padding-left: 25px;
+}

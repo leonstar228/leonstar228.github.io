@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* ------------------------ Table ------------------------*/
+table {
+    width: 700px;
+    margin: 50px auto;
+    border-collapse: collapse;
+}
+
+thead th {
+    border: 2px solid black;
+    font-weight: 100;
+    text-align: left;
+    padding-left: 5px;
+}
+
+tbody td {
+    border: 2px solid black;
+    padding-left: 5px;
+}
+
+th:nth-child(odd), td:nth-child(odd){
+    background-color: #e6ffd6;
+}
+th:nth-child(even), td:nth-child(even) {
+    background-color: #d7faba;
+}
+td:not(:last-child) {
+    width: 90px;
+}
+.main-title {
+    background-color: #33cc33 !important;
+    color: rgb(245, 245, 245);
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    padding: 0;
+}
+
+
+/* ------------------------ Float ------------------------*/
+.table {
+    width: 700px;
+    margin: auto;
+    border: 1px solid black;
+}
+.cell {
+    float: left;
+    padding-left: 5px;
+    border: 1px solid black;
+}
+.cell:nth-child(odd), .cell:nth-child(odd){
+    background-color: #e6ffd6;
+}
+.cell:nth-child(even), .cell:nth-child(even) {
+    background-color: #d7faba;
+}
+.cell:not(:nth-child(6)){
+    width: 90px;
+}
+.cell:nth-child(6){
+    width: 248.4px;
+}
+.full-width {
+    width: 100%;
+    background-color: #33cc33;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid black;
+}
+.row::after {
+    content: "";
+    display: table;
+    clear: left;
+}
