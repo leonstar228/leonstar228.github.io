@@ -9,19 +9,20 @@ ul{
     list-style: none;
 }
 /* -------------------- header --------------------- */
-header{
+header, footer{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(38, 19, 148);
 }
-header ul{
+header ul, .box_media{
     display: flex;
     flex-direction: row;
     gap: 150px;
     font-size: 20pt;
     margin: 20px 0;
+    fill: white;
 }
 /* -------------------- aside --------------------- */
 a{
